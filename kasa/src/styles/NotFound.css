@@ -1,0 +1,44 @@
+#not_found h1 {
+    margin: 0;
+    font-size: 288px;
+}
+
+#not_found {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 150px;
+}
+
+#not_found h2 {
+    font-size: 36px;
+    text-align: center;
+}
+
+#not_found a {
+    padding-top: 180px;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 907px) {
+    #not_found a {
+        font-size: 14px;
+        padding-top: 80px;
+    }
+
+    #not_found h2 {
+        font-size: 18px;
+    }
+
+    #not_found h1 {
+        font-size: 96px;
+    }
+
+    #not_found {
+        padding-top: 120px;
+        margin: 0 40px;
+    }
+    
+    
+}

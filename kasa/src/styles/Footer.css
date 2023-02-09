@@ -1,0 +1,38 @@
+footer {
+    height: 210px;
+	z-index: 11;
+	width: 100%;
+	left: 0%;
+	right: 0%;
+	margin: 0%;
+	padding: 0;
+	display: flex;
+	color: white;
+	justify-content: center;
+	position:absolute;
+    background-color: black;
+}
+
+footer div {
+	margin-top: 70px;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer div h2 {
+	font-weight: 500;
+	font-size: 24px;
+}
+
+footer div img {
+	width: 122px;
+}
+
+@media only screen and (max-width: 907px) {
+	footer div h2 {
+		font-size: 12px;
+	}
+}

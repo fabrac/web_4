@@ -1,0 +1,17 @@
+.tag h3 {
+    color: white;
+    font-size: 14px;
+    margin: 0;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.tag {
+    text-align: center;
+    background-color: #FF6060;
+    width: 115px;
+    height: 25px;
+    margin-right: 10px;
+    line-height: 25px;
+    border-radius: 10px;
+}

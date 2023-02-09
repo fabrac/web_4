@@ -1,0 +1,35 @@
+.host img {
+    height: 64px;
+    width: 64px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.host {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.host h3 {
+    width: min-content;
+    white-space: break-space;
+    align-items: flex-end;
+    text-align: right;
+    vertical-align: middle;
+    padding: 10px;
+    margin: 0;
+    height: 64px;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 907px) {
+   .host img {
+        margin: auto 0;
+   }
+
+   .host h3 {
+        height: 40px;
+        margin: auto 0;
+        font-size: 12px;
+   }
+}

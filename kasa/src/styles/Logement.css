@@ -1,0 +1,84 @@
+.logement {
+    height: auto;
+}
+
+.tags {
+    display: flex;
+}
+
+.infos {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.infos .dropdown {
+    width: 45%;
+}
+
+.infos .dropdown h2 {
+    padding: 20px 20px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.infos .dropdown .text {
+    height: 150px;
+    font-size: 18px;
+}
+
+.rating-host {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logement-infos {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 907px) {
+    .logement-infos {
+        flex-direction: column;
+    }
+
+    .infos {
+        flex-direction: column;
+    }
+
+    .infos .dropdown {
+        width: 100%;
+    }
+
+    .rating-host {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .logement h2 {
+        font-size: 14px;
+    }
+
+    .logement h3 {
+        font-size: 10px;
+    }
+
+    .infos .dropdown h2 {
+        padding: 7px 10px;
+        font-size: 13px;
+    }
+    
+    .infos .dropdown .text {
+        height: auto;
+        font-size: 12px;
+    }
+}
