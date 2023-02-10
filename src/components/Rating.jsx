@@ -6,7 +6,7 @@ import '../styles/Rating.css'
 const Rating = ({stars}) => {
     let content = [];
     for (let i = 0; i < 5; i++) {
-        content.push(<FontAwesomeIcon className={(i < stars) ? "star-fill" : "star" } icon={icon({name:'star', style:'solid'})} />);
+        content.push(<FontAwesomeIcon key={i} className={(i < stars) ? "star-fill" : "star" } icon={icon({name:'star', style:'solid'})} />);
     }
     return (
         <div className="rating">
