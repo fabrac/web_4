@@ -8,7 +8,7 @@ const Slideshow = ({slides}) => {
     const [currentSlide, slidechange] = useState(0)
     return (
         <div className="slideshow">
-            <img src={slides[currentSlide]}></img>
+            <img alt='Slideshow' src={slides[currentSlide]}></img>
             {(slides.length > 1) ? (
                 <>
                 
