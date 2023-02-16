@@ -1,12 +1,12 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 import '../styles/Rating.css'
+import star from '../assets/images/star.svg'
+import star_fill from '../assets/images/star_fill.svg'
 
 const Rating = ({stars}) => {
     let content = [];
     for (let i = 0; i < 5; i++) {
-        content.push(<FontAwesomeIcon key={i} className={(i < stars) ? "star-fill" : "star" } icon={icon({name:'star', style:'solid'})} />);
+        content.push(<img key={i} alt='' className="star" src={(i < stars) ? star_fill : star } />);
     }
     return (
         <div className="rating">

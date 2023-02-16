@@ -1,8 +1,7 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 import { useState } from 'react'
 import '../styles/Slideshow.css'
+import chevron from '../assets/images/chevron-up.svg'
 
 const Slideshow = ({slides}) => {
     const [currentSlide, slidechange] = useState(0)
@@ -12,8 +11,8 @@ const Slideshow = ({slides}) => {
             {(slides.length > 1) ? (
                 <>
                 
-                    <FontAwesomeIcon onClick={() => slidechange((currentSlide === 0) ? (slides.length - 1) : (currentSlide - 1))} className="left" icon={icon({name:'chevron-up', style:'solid'})} />
-                    <FontAwesomeIcon onClick={() => slidechange((currentSlide === slides.length - 1) ? 0 : currentSlide + 1)} className="right" icon={icon({name:'chevron-up', style:'solid'})} />
+                    <img alt='' onClick={() => slidechange((currentSlide === 0) ? (slides.length - 1) : (currentSlide - 1))} className="left" src={chevron} />
+                    <img alt='' onClick={() => slidechange((currentSlide === slides.length - 1) ? 0 : currentSlide + 1)} className="right" src={chevron} />
                     <h2>{currentSlide + 1}/{slides.length}</h2>
                 </>
             ) : null}
